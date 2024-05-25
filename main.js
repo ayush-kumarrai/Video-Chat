@@ -43,7 +43,7 @@ async function startChat() {
 }
 
 // Signaling Server Connection
-const signalingServer = new WebSocket('wss://your-signaling-server-url');
+const signalingServer = new WebSocket('https://video-chat-dz15.onrender.com');
 signalingServer.onmessage = async message => {
     const data = JSON.parse(message.data);
 
